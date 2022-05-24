@@ -1,0 +1,44 @@
+{
+  "node": "v16.15.0",
+  "system": {
+    "manufacturer": "Dell Inc.",
+    "model": "Inspiron 7790 AIO"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i7-10510U",
+    "speed": 1.8
+  },
+  "memory": "16 GB",
+  "osInfo": {
+    "platform": "Windows",
+    "distro": "Microsoft Windows 11 Home",
+    "release": "10.0.22000"
+  },
+  "vscodeInfo": {
+    "version": "1.67.2",
+    "extensions": [
+      "AhadCove.js-quick-console",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-footnotes",
+      "bierner.markdown-mermaid",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "donjayamanne.githistory",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "FallenMax.mithril-emmet",
+      "formulahendry.code-runner",
+      "ms-vscode.js-debug-nightly",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker",
+      "WallabyJs.quokka-vscode",
+      "xabikos.JavaScriptSnippets"
+    ],
+    "userSettings": {}
+  }
+}
