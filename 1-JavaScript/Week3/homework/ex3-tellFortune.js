@@ -35,18 +35,23 @@ body, this code is now written once only in a separated function.
 
 // a randomly selected element as its return value.
 
-function selectRandomly() {
-  return Math.floor(Math.random() * 5);
+function selectRandomly(arr) {
+  const index = Math.floor(Math.random() * 5);
+  const result = arr[index];
+  return result;
 }
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
-  const r = selectRandomly();
-  return `"You will be a ${jobTitles[r]} in ${locations[r]}, married to ${partnerNames[r]} with ${numKids[r]} kids."`;
+  const nKid = selectRandomly(numKids);
+  const pName = selectRandomly(partnerNames);
+  const loc = selectRandomly(locations);
+  const jTitle = selectRandomly(jobTitles);
+  return `You will be a ${jTitle} in ${loc}, married to ${pName} with ${nKid} kids.`;
 }
 
 function main() {
   const numKids = [1, 2, 3, 4, 5];
-  const partnerNames = ['Nilden', 'Mary', 'Meriam', 'Gulistan', 'Canan'];
+  const partnerNames = ['Jessica', 'Mary', 'Miriam', 'Nuristan', 'Julie'];
   const locations = ['Amsterdam', 'Istanbul', 'Barcelona', 'Roma', 'Kazan'];
   const jobTitles = ['Developer', 'Pilot', 'Doctor', 'Driver', 'Engineer'];
 
