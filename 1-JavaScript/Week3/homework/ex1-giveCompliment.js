@@ -31,7 +31,7 @@ function giveCompliment(name) {
     'irresistible',
     'perfect',
   ];
-  const randComp = compliments[Math.floor(Math.random() * 10)];
+  const randComp = compliments[Math.floor(Math.random() * compliments.length)];
   const result = `You are ${randComp}, ${name}!`;
   return result;
 }
