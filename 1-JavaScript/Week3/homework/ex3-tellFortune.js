@@ -36,7 +36,7 @@ body, this code is now written once only in a separated function.
 // a randomly selected element as its return value.
 
 function selectRandomly(arr) {
-  const index = Math.floor(Math.random() * 5);
+  const index = Math.floor(Math.random() * arr.length);
   const result = arr[index];
   return result;
 }
