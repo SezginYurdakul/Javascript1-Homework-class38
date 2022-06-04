@@ -404,3 +404,498 @@ Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
 Time:        0.386 s, estimated 1 s
 Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-06-04 11:52:49 info: -------------------------------------------------
+2022-06-04 11:52:49 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-04 11:52:49 info: -------------------------------------------------
+2022-06-04 11:52:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (1 ms)
+    × should compute the earnings as a formatted Euro amount (1 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: mondayTasks.map(...).toFixed is not a function
+
+      35 |   return mondayTasks
+      36 |     .map((element) => (hourlyRate * element.duration) / 60)
+    > 37 |     .toFixed(2);
+         |      ^
+      38 | }
+      39 |
+      40 | // ! Unit tests (using Jest)
+
+      at computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:37:6)
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.374 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-06-04 12:01:38 info: -------------------------------------------------
+2022-06-04 12:01:38 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-04 12:01:38 info: -------------------------------------------------
+2022-06-04 12:01:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (1 ms)
+    × should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "187.50"
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.37 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-06-04 12:03:01 info: -------------------------------------------------
+2022-06-04 12:03:01 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-04 12:03:01 info: -------------------------------------------------
+2022-06-04 12:03:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (2 ms)
+    × should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "187.50"
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.321 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-06-04 12:03:53 info: -------------------------------------------------
+2022-06-04 12:03:53 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-06-04 12:03:53 info: -------------------------------------------------
+2022-06-04 12:03:55 info: All unit tests passed.
+2022-06-04 12:03:58 info: All steps were completed successfully
+2022-06-04 12:12:34 info: ----------------------------------------
+2022-06-04 12:12:34 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-06-04 12:12:34 info: ----------------------------------------
+2022-06-04 12:12:36 info: All unit tests passed.
+2022-06-04 12:12:38 info: All steps were completed successfully
+2022-06-04 12:12:54 info: ------------------------------------------------------
+2022-06-04 12:12:54 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-06-04 12:12:54 info: ------------------------------------------------------
+2022-06-04 12:12:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  √ doubleEvenNumbers should take the even numbers and double them (2 ms)
+  × doubleEvenNumbers should take the even numbers and double them (3 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 2
+
+      Array [
+    +   0,
+    +   -4,
+        16,
+        4,
+        8,
+      ]
+
+      31 |   const actual = doubleEvenNumbers([0, -2, 8, 11, 2, 3, 4, 4.5]);
+      32 |   const expected = [16, 4, 8];
+    > 33 |   expect(actual).toEqual(expected);
+         |                  ^
+      34 | });
+      35 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:33:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.311 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-06-04 12:13:31 info: ------------------------------------------------------
+2022-06-04 12:13:31 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-06-04 12:13:31 info: ------------------------------------------------------
+2022-06-04 12:13:33 info: All unit tests passed.
+2022-06-04 12:13:35 info: All steps were completed successfully
+2022-06-04 12:52:31 info: -------------------------------------------------
+2022-06-04 12:52:31 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 12:52:31 info: -------------------------------------------------
+2022-06-04 12:52:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      45 |     const originalFruitBasketContents = [...fruitBasket];
+      46 |     // TODO replace next line with your code
+    > 47 |     expect(false).toBe(true);
+         |                   ^
+      48 |   });
+      49 |
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.375 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-04 12:52:34 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  40:5   warning  Remove commented-out code                                         hyf/no-commented-out-code
+  45:11  error    'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-06-04 12:53:15 info: -------------------------------------------------
+2022-06-04 12:53:15 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 12:53:15 info: -------------------------------------------------
+2022-06-04 12:53:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      45 |     const originalFruitBasketContents = [...fruitBasket];
+      46 |     // TODO replace next line with your code
+    > 47 |     expect(false).toBe(true);
+         |                   ^
+      48 |   });
+      49 |
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.309 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-04 12:53:18 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  40:5   warning  Remove commented-out code                                         hyf/no-commented-out-code
+  45:11  error    'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-06-04 12:55:22 info: -------------------------------------------------
+2022-06-04 12:55:22 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 12:55:22 info: -------------------------------------------------
+2022-06-04 12:55:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    TypeError: originalFruitBasketContents.equal is not a function
+
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+      45 |     sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 46 |     expect(false).toBe(originalFruitBasketContents.equal(fruitBasket));
+         |                                                    ^
+      47 |   });
+      48 |
+      49 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:46:52)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      49 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      50 |     // TODO replace next line with your code
+    > 51 |     expect(false).toBe(true);
+         |                   ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:51:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.375 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-04 12:58:14 info: -------------------------------------------------
+2022-06-04 12:58:14 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 12:58:14 info: -------------------------------------------------
+2022-06-04 12:58:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    × should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      44 |     const originalFruitBasketContents = [...fruitBasket];
+      45 |     sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 46 |     expect(originalFruitBasketContents.toString !== fruitBasket.toString).toBe(
+         |                                                                           ^
+      47 |       originalFruitBasketContents.toString === fruitBasket.toString
+      48 |     );
+      49 |   });
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:46:75)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      52 |     // TODO replace next line with your code
+    > 53 |     expect(false).toBe(true);
+         |                   ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:53:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.366 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-04 01:03:48 info: -------------------------------------------------
+2022-06-04 01:03:48 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 01:03:48 info: -------------------------------------------------
+2022-06-04 01:03:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (1 ms)
+    × should not modify the original `fruitBasket` array
+    × should return a new array that does not include the unwanted `lemon` (4 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    TypeError: expect(...).toEqual.toBe is not a function
+
+      47 |     //  originalFruitBasketContents.toString === fruitBasket.toString
+      48 |     //);
+    > 49 |     expect(fruitBasket).toEqual.toBe(originalFruitBasketContents);
+         |                                 ^
+      50 |   });
+      51 |
+      52 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:49:33)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      52 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      53 |     // TODO replace next line with your code
+    > 54 |     expect(false).toBe(true);
+         |                   ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:54:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.375 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-04 01:03:51 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  45:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-06-04 01:28:50 info: -------------------------------------------------
+2022-06-04 01:28:50 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 01:28:50 info: -------------------------------------------------
+2022-06-04 01:28:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (1 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      52 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      53 |     // TODO replace next line with your code
+    > 54 |     expect(false).toBe(true);
+         |                   ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:54:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.397 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-06-04 01:31:42 info: -------------------------------------------------
+2022-06-04 01:31:42 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-06-04 01:31:42 info: -------------------------------------------------
+2022-06-04 01:31:44 info: All unit tests passed.
+2022-06-04 01:31:46 info: All steps were completed successfully

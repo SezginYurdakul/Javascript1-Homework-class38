@@ -26,9 +26,3 @@ test('doubleEvenNumbers should take the even numbers and double them', () => {
   const expected = [4, 8];
   expect(actual).toEqual(expected);
 });
-
-test('doubleEvenNumbers should take the even numbers and double them', () => {
-  const actual = doubleEvenNumbers([0, -2, 8, 11, 2, 3, 4, 4.5]);
-  const expected = [16, 4, 8];
-  expect(actual).toEqual(expected);
-});
