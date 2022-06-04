@@ -24,18 +24,13 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(item) {
-  if (item === undefined) {
-    shoppingCart;
-  } else if (shoppingCart.length < 3) {
+  if (item !== undefined) {
     shoppingCart.push(item);
-  } else {
-    shoppingCart.shift();
-    shoppingCart.push(item);
+    if (shoppingCart.length > 3) {
+      shoppingCart.shift();
+    }
   }
-
-  const result = 'You bought ' + shoppingCart.join(', ') + '!';
-  console.log(result);
-  return result;
+  return 'You bought ' + shoppingCart.join(', ') + '!';
 }
 
 // ! Test functions (plain vanilla JavaScript)
