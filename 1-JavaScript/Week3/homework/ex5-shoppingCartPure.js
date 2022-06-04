@@ -17,16 +17,14 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(shoppingCart, item) {
-  let newShoppingCart;
-  if (item === undefined) {
-    newShoppingCart = shoppingCart;
-  } else if (shoppingCart.length < 3) {
-    newShoppingCart = [...shoppingCart, item];
-  } else {
-    shoppingCart.shift();
-    newShoppingCart = [...shoppingCart, item];
+  let newShoppingCart = shoppingCart;
+  if (item !== undefined) {
+    newShoppingCart.push(item);
+    if (newShoppingCart.length > 3) {
+      newShoppingCart.shift();
+    }
+    return newShoppingCart;
   }
-  return newShoppingCart;
 }
 
 // ! Test functions (plain vanilla JavaScript)
