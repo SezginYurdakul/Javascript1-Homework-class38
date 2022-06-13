@@ -19,6 +19,24 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 function createBookList(books) {
   // TODO your code goes in here, return the ul element
+  const bookList = document.createElement('ul');
+  books.forEach((book) => {
+    const imgName = book.title.toLowerCase().split(' ').join('_') + '.jpg';
+    const bookBox = document.createElement('li');
+    const bookInfo = document.createElement('p');
+    bookInfo.textContent = `${book.title}-${book.author}`;
+    const bookImg = document.createElement('img');
+    bookImg.src = `./assets/${imgName}`;
+    bookBox.appendChild(bookInfo);
+    bookBox.appendChild(bookImg);
+    bookList.appendChild(bookBox);
+    if (book.alreadyRead) {
+      bookBox.style.background = '#95eb34';
+    } else {
+      bookBox.style.background = '#fc4c2d';
+    }
+  });
+  return bookList;
 }
 
 function main() {

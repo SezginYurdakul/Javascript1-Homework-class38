@@ -1,1 +1,9 @@
 /* 3. Add a css rule for .list-item to make the color red. */
+.list-item {
+  color: red;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+h1 {
+  padding-left: 20px;
+}
