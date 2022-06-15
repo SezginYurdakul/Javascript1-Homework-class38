@@ -36,17 +36,16 @@ function catWalk() {
     gifPosition >= (window.innerWidth - gifElement.width) / 2 - 7 &&
     gifPosition < (window.innerWidth - gifElement.width) / 2 + 7
   ) {
+    gifElement.src = gifDancing;
+    clearInterval(walkInterval);
     setTimeout(() => {
       gifElement.src = gifWalking;
       walkInterval = setInterval(catWalk, 50);
     }, 5000);
-    clearInterval(walkInterval);
-
-    gifElement.src = gifDancing;
-  } else if (gifPosition > window.innerWidth - gifElement.width) {
+  } else if (gifPosition > window.innerWidth) {
     gifPosition = 0;
   }
 }
 // TODO execute `catWalk` when the browser has completed loading the page
 
-window.addEventListener('load', catWalk);
+//window.addEventListener('click', catWalk);
