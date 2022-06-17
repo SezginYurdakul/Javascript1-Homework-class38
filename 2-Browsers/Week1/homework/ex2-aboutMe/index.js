@@ -10,10 +10,14 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
-const personalInfo = document.querySelectorAll('nickname');
+//const personalInfo = document.querySelectorAll('id');
 
-personalInfo[0].innerText = 'Sezar';
-personalInfo[1].innerText = 'Icli Kofte';
-personalInfo[2].innerText = 'Istanbul';
+document.getElementById('nickname').innerText = 'Sezar';
+document.getElementById('fav-food').innerText = 'Icli Kofte';
+document.getElementById('hometown').innerText = 'Istanbul';
+
+//personalInfo[0].innerText = 'Sezar';
+//personalInfo[1].innerText = 'Icli Kofte';
+//personalInfo[2].innerText = 'Istanbul';
 const listElements = document.querySelectorAll('ul');
 listElements.forEach((listElm) => (listElm.className = 'list-item'));
