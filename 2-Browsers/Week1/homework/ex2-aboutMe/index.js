@@ -10,7 +10,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 // TODO add your JavaScript code here.
-const personalInfo = document.querySelectorAll('span');
+const personalInfo = document.querySelectorAll('nickname');
 
 personalInfo[0].innerText = 'Sezar';
 personalInfo[1].innerText = 'Icli Kofte';

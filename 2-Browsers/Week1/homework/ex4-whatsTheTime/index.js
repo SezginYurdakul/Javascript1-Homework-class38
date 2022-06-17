@@ -17,20 +17,21 @@ document.body.appendChild(h2);
 function addCurrentTime() {
   // TODO complete this function
   let date = new Date();
-  let hrs = date.getHours();
-  let mins = date.getMinutes();
-  let secs = date.getSeconds();
+  let time = date.toLocaleTimeString('en-GB');
 
-  hrs = hrs < 10 ? '0' + hrs : hrs;
-  mins = mins < 10 ? '0' + mins : mins;
-  secs = secs < 10 ? '0' + secs : secs;
+  // let hrs = date.getHours();
+  // let mins = date.getMinutes();
+  // let secs = date.getSeconds();
 
-  let time = `${hrs}:${mins}:${secs}`;
+  // hrs = hrs < 10 ? '0' + hrs : hrs;
+  // mins = mins < 10 ? '0' + mins : mins;
+  // secs = secs < 10 ? '0' + secs : secs;
+
+  // let time = `${hrs}:${mins}:${secs}`;
+
   document.querySelector('H2').textContent = time;
   setTimeout(addCurrentTime, 1000);
 }
 
 // TODO execute `addCurrentTime` when the browser has completed loading the page
-window.addEventListener('load', (event) => {
-  addCurrentTime();
-});
+window.addEventListener('load', addCurrentTime);
