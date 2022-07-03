@@ -16,9 +16,11 @@
     "release": "10.0.22000"
   },
   "vscodeInfo": {
-    "version": "1.67.2",
+    "version": "1.68.1",
     "extensions": [
+      "aaravb.chrome-extension-developer-tools",
       "AhadCove.js-quick-console",
+      "ajhyndman.jslint",
       "bierner.github-markdown-preview",
       "bierner.markdown-checkbox",
       "bierner.markdown-emoji",
@@ -26,18 +28,24 @@
       "bierner.markdown-mermaid",
       "bierner.markdown-preview-github-styles",
       "bierner.markdown-yaml-preamble",
+      "codemooseus.vscode-devtools-for-chrome",
       "DavidAnson.vscode-markdownlint",
       "dbaeumer.vscode-eslint",
       "donjayamanne.githistory",
       "eamodio.gitlens",
+      "eg2.vscode-npm-script",
       "esbenp.prettier-vscode",
       "FallenMax.mithril-emmet",
       "formulahendry.code-runner",
+      "hbenl.vscode-test-explorer",
+      "mhutchie.git-graph",
       "ms-vscode.js-debug-nightly",
+      "ms-vscode.test-adapter-converter",
       "ritwickdey.LiveServer",
       "streetsidesoftware.code-spell-checker",
       "WallabyJs.quokka-vscode",
-      "xabikos.JavaScriptSnippets"
+      "xabikos.JavaScriptSnippets",
+      "zhucy.project-tree"
     ],
     "userSettings": {}
   }
