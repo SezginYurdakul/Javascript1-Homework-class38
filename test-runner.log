@@ -1725,3 +1725,296 @@ Ran all test suites matching /ex3-rollDie.test.js/i.
 2022-07-04 11:38:11 info: ---------------------------------------
 2022-07-04 11:38:13 info: All unit tests passed.
 2022-07-04 11:38:15 info: All steps were completed successfully
+2022-07-04 01:59:07 info: --------------------------------------------
+2022-07-04 01:59:07 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:59:07 info: --------------------------------------------
+2022-07-04 01:59:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()` (1 ms)
+    √ should resolve when all dice settle successfully (6 ms)
+    √ should reject with an Error when a die rolls off the table (88 ms)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.842 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 01:59:11 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  32:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-07-04 01:59:31 info: --------------------------------------------
+2022-07-04 01:59:31 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:59:31 info: --------------------------------------------
+2022-07-04 01:59:33 info: All unit tests passed.
+2022-07-04 01:59:34 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-07-04 02:00:23 info: --------------------------------------------
+2022-07-04 02:00:23 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:00:23 info: --------------------------------------------
+2022-07-04 02:00:25 info: All unit tests passed.
+2022-07-04 02:00:28 info: All steps were completed successfully
+2022-07-04 02:27:50 info: --------------------------------------------
+2022-07-04 02:27:50 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:27:50 info: --------------------------------------------
+2022-07-04 02:27:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()`
+    × should resolve when all dice settle successfully (7 ms)
+    √ should reject with an Error when a die rolls off the table (88 ms)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.518 s, estimated 1 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 02:27:53 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  33:3  error  Unreachable code  no-unreachable
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-07-04 02:28:33 info: --------------------------------------------
+2022-07-04 02:28:33 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:28:33 info: --------------------------------------------
+2022-07-04 02:28:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls
+    √ should use `dice.map()`
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (8 ms)
+    √ should reject with an Error when a die rolls off the table (84 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.495 s, estimated 1 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 02:28:37 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  32:3  error  Unreachable code  no-unreachable
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-07-04 02:33:25 info: --------------------------------------------
+2022-07-04 02:33:25 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:33:25 info: --------------------------------------------
+2022-07-04 02:33:26 info: All unit tests passed.
+2022-07-04 02:33:28 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-07-04 02:33:41 info: --------------------------------------------
+2022-07-04 02:33:41 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:33:41 info: --------------------------------------------
+2022-07-04 02:33:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()`
+    × should resolve when all dice settle successfully (10 ms)
+    √ should reject with an Error when a die rolls off the table (87 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.428 s, estimated 1 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 02:33:44 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  32:3  error  Unreachable code  no-unreachable
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-07-04 02:40:44 info: --------------------------------------------
+2022-07-04 02:40:44 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:40:44 info: --------------------------------------------
+2022-07-04 02:40:46 info: All unit tests passed.
+2022-07-04 02:40:48 info: All steps were completed successfully
