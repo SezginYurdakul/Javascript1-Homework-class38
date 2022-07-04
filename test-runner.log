@@ -2018,3 +2018,244 @@ ex4-pokerDiceAll.js
 2022-07-04 02:40:44 info: --------------------------------------------
 2022-07-04 02:40:46 info: All unit tests passed.
 2022-07-04 02:40:48 info: All steps were completed successfully
+2022-07-04 09:20:28 info: ----------------------------------------------
+2022-07-04 09:20:28 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:20:28 info: ----------------------------------------------
+2022-07-04 09:20:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    √ should resolve when all dice settle successfully (52 ms)
+    √ should reject with an Error when a die rolls off the table (94 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.646 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 09:20:55 info: ----------------------------------------------
+2022-07-04 09:20:55 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:20:55 info: ----------------------------------------------
+2022-07-04 09:20:57 info: All unit tests passed.
+2022-07-04 09:21:00 info: All steps were completed successfully
+2022-07-04 09:24:09 info: ----------------------------------------------
+2022-07-04 09:24:09 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:24:09 info: ----------------------------------------------
+2022-07-04 09:24:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should resolve when all dice settle successfully (37 ms)
+    √ should reject with an Error when a die rolls off the table (85 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 4
+    Received array:  ["NINE", "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.519 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 09:24:12 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  37:12  error    'value' is defined but never used  no-unused-vars
+  38:7   warning  Remove commented-out code          hyf/no-commented-out-code
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-07-04 09:24:38 info: ----------------------------------------------
+2022-07-04 09:24:38 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:24:38 info: ----------------------------------------------
+2022-07-04 09:24:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should resolve when all dice settle successfully (59 ms)
+    √ should reject with an Error when a die rolls off the table (85 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 4
+    Received array:  ["NINE", "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.544 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 09:24:42 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  38:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-07-04 09:24:58 info: ----------------------------------------------
+2022-07-04 09:24:58 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:24:58 info: ----------------------------------------------
+2022-07-04 09:25:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls
+    × should resolve when all dice settle successfully (145 ms)
+    √ should reject with an Error when a die rolls off the table (88 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 4
+    Received array:  ["NINE", "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.551 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 09:25:01 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  38:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-07-04 09:25:28 info: ----------------------------------------------
+2022-07-04 09:25:28 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:25:28 info: ----------------------------------------------
+2022-07-04 09:25:30 info: All unit tests passed.
+2022-07-04 09:25:33 info: All steps were completed successfully
+2022-07-04 09:28:57 info: ----------------------------------------------
+2022-07-04 09:28:57 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:28:57 info: ----------------------------------------------
+2022-07-04 09:28:59 info: All unit tests passed.
+2022-07-04 09:29:02 info: All steps were completed successfully
+2022-07-04 09:32:16 info: ----------------------------------------------
+2022-07-04 09:32:16 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:32:16 info: ----------------------------------------------
+2022-07-04 09:32:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    √ should resolve when all dice settle successfully (54 ms)
+    √ should reject with an Error when a die rolls off the table (93 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.553 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 09:32:36 info: ----------------------------------------------
+2022-07-04 09:32:36 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 09:32:36 info: ----------------------------------------------
+2022-07-04 09:32:38 info: All unit tests passed.
+2022-07-04 09:32:40 info: All steps were completed successfully
