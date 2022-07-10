@@ -1,0 +1,43 @@
+2022-07-10 08:53:23 info: ---------------------------------------------
+2022-07-10 08:53:23 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-07-10 08:53:23 info: ---------------------------------------------
+2022-07-10 08:53:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (81 ms)
+    × should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.027 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-07-10 08:54:11 info: ---------------------------------------------
+2022-07-10 08:54:11 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-07-10 08:54:11 info: ---------------------------------------------
+2022-07-10 08:54:15 info: All unit tests passed.
+2022-07-10 08:54:17 info: All steps were completed successfully
