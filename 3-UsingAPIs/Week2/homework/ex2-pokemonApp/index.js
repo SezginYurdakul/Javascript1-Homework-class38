@@ -1,4 +1,3 @@
-'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-2-gotta-catch-em-all
 
@@ -88,17 +87,17 @@ function main() {
 
 function initialPageLoad() {
   webElementCreate('div', 'body', 'container');
-  //webElementCreate('div', 'body', 'imgcontainer');
   const btnGetPokemon = webElementCreate(
     'button',
     '.container',
     'get-pokemon-button'
   );
+  btnGetPokemon.type = 'button';
   btnGetPokemon.textContent = 'Get Pokemon!';
 }
-function webElementCreate(tagName, parentName, class_Name) {
+function webElementCreate(tagName, parentName, className) {
   const element = document.createElement(tagName);
-  element.classList.add(class_Name);
+  element.classList.add(className);
   document.querySelector(parentName).appendChild(element);
   return element;
 }

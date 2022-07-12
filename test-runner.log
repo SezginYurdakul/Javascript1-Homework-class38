@@ -3,3 +3,214 @@
 2022-07-10 09:02:38 info: ---------------------------------------------
 2022-07-10 09:02:42 info: All unit tests passed.
 2022-07-10 09:02:45 info: All steps were completed successfully
+2022-07-12 01:34:18 info: ------------------------------------------
+2022-07-12 01:34:18 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-07-12 01:34:18 info: ------------------------------------------
+2022-07-12 01:34:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (88 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:25  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.974 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-07-12 01:34:24 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  91:3   warning  Remove commented-out code                    hyf/no-commented-out-code
+  99:48  warning  Identifier 'class_Name' is not in camelCase  hyf/camelcase
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-07-12 01:34:26 error: *** Spell Checker Report ***
+
+ex2-pokemonApp/index.js:91:38 - Unknown word (imgcontainer)
+
+2022-07-12 01:40:55 info: ------------------------------------------
+2022-07-12 01:40:55 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-07-12 01:40:55 info: ------------------------------------------
+2022-07-12 01:40:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (83 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:25  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.485 s, estimated 3 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-07-12 01:41:00 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  91:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-07-12 01:41:01 error: *** Spell Checker Report ***
+
+ex2-pokemonApp/index.js:91:38 - Unknown word (imgcontainer)
+
+2022-07-12 01:42:33 info: ------------------------------------------
+2022-07-12 01:42:33 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-07-12 01:42:33 info: ------------------------------------------
+2022-07-12 01:42:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (82 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:25  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.479 s, estimated 3 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-07-12 01:44:45 info: ------------------------------------------
+2022-07-12 01:44:45 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-07-12 01:44:45 info: ------------------------------------------
+2022-07-12 01:44:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (91 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:25  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.456 s, estimated 3 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-07-12 01:59:11 info: ------------------------------------------
+2022-07-12 01:59:11 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-07-12 01:59:11 info: ------------------------------------------
+2022-07-12 01:59:15 info: All unit tests passed.
+2022-07-12 01:59:18 info: All steps were completed successfully
+2022-07-12 02:03:32 info: -----------------------------------------
+2022-07-12 02:03:32 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-07-12 02:03:32 info: -----------------------------------------
+2022-07-12 02:03:34 info: All unit tests passed.
+2022-07-12 02:03:36 info: All steps were completed successfully
