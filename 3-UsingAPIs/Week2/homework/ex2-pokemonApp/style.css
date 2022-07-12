@@ -1,1 +1,54 @@
-/* add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+.pokemon-img {
+  height: 50vh;
+  display: flex;
+}
+.container {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#ffbd03, #5adbb5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-pokemon-button {
+  width: 40vw;
+  font-size: 1.5rem;
+  height: 3rem;
+  margin: 3vw auto 2vw auto;
+  color: rgb(13, 13, 13);
+  border-radius: 2px;
+  background-color: #a881af;
+  cursor: pointer;
+  font-family: 'Lucida Sans';
+}
+.get-pokemon-button:hover {
+  background-color: #5adbb5;
+}
+.error-message {
+  margin: 5vw;
+  color: red;
+  font-family: 'Lucida Sans';
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pokemon-select-list {
+  width: 40vw;
+  height: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 5vw;
+}
+
+.pokemon-select-list-item {
+  font-family: 'Lucida Sans';
+}

@@ -61,6 +61,7 @@ async function fetchImage(image) {
   } catch (error) {
     handleError(error);
   }
+
   const imgElement = webElementCreate('img', '.container', 'pokemon-img');
   imgElement.src = data.sprites.other['official-artwork'].front_default;
   imgElement.alt = 'pokemon-img';
@@ -87,6 +88,7 @@ function main() {
 
 function initialPageLoad() {
   webElementCreate('div', 'body', 'container');
+  //webElementCreate('div', 'body', 'imgcontainer');
   const btnGetPokemon = webElementCreate(
     'button',
     '.container',
