@@ -30,13 +30,13 @@ function renderImage(data) {
   const imgElement = document.createElement('img');
   imgElement.src = data.img;
   imgElement.alt = data.alt;
-  document.getElementById('body').appendChild(imgElement);
+  document.querySelector('body').appendChild(imgElement);
 }
 
 function renderError(error) {
   const errElement = document.createElement('div');
   errElement.textContent = error;
-  document.querySelector('body').appendChild(errElement);
+  document.querySelector('body').appendChild(errElement); // I just changed selector type and now it is working
 }
 
 async function main() {
